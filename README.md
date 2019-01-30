@@ -9,8 +9,9 @@ Basic   | Spec Sheet
 CPU     | Quad-core 1.4 GHz Cortex-A53 && Quad-core 1.1 GHz Cortex-A53
 Chipset | Qualcomm MSM8937 Snapdragon 430
 GPU     | Adreno 505
-Memory  | 3 GB RAM
-Shipped Android Version | 7.1
+Memory  | 2 GB RAM
+Shipped Android Version | Nougat 7.1
+Updated | Oreo 8.1
 Storage | 32 GB
 MicroSD | Up to 256 GB
 Battery | Li-Ion 3000mAh battery
