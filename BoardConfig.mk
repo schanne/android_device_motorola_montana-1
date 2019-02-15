@@ -186,7 +186,8 @@ TARGET_PROVIDES_KEYMASTER := true
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Lineage Hardware
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(DEVICE_PATH)/lineagehw|**/*.java
+BOARD_HARDWARE_CLASS += \
+    $(DEVICE_PATH)/lineagehw
 
 # Manifest
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifest.xml
@@ -227,7 +228,6 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/bin/adspd|libshim_adsp.so \
     /system/vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so \
     /system/vendor/lib/libmot_gpu_mapper.so|libgpu_mapper_shim.so \
-    /system/lib/libjustshoot.so|libjustshoot_shim.so \
     /system/vendor/lib/libjustshoot.so|libjustshoot_shim.so \
     /system/vendor/lib64/libmdmcutback.so|libqsap_shim.so
 

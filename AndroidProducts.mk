@@ -14,4 +14,5 @@
 # limitations under the License.
 
  PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_montana.mk
+    $(LOCAL_DIR)/bootleg.mk
+

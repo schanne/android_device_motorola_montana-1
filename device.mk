@@ -122,7 +122,7 @@ PRODUCT_COPY_FILES += \
 
 # LineageActions
 PRODUCT_PACKAGES += \
-    LineageActions
+    MotoActions
 
 # Display
 PRODUCT_PACKAGES += \
@@ -451,3 +451,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_VENDOR_KERNEL_HEADERS := hardware/qcom/msm8996/kernel-headers
+
+# Fingerprint
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+
+    PRODUCT_NAME="Moto G5s" \
+
+    PRIVATE_BUILD_DESC="montana-8.1/OPPS28.65-37-2-2/2:user/release-keys"
+
+
+BUILD_FINGERPRINT := motorola/montana/montana:8.1/OPPS28.65-37-2-2/2:user/release-keys
