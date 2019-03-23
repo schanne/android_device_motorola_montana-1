@@ -14,5 +14,5 @@
 # limitations under the License.
 
  PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_montana.mk
+    $(LOCAL_DIR)/dot_montana.mk
 

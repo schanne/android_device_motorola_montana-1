@@ -23,7 +23,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/montana/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -31,7 +31,7 @@ TARGET_SCREEN_HEIGHT := 1920
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := montana
-PRODUCT_NAME := aosp_montana
+PRODUCT_NAME := dot_montana
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := Moto G5s
@@ -43,6 +43,12 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G5s"
+    PRODUCT_NAME="montana"
+    TARGET_NAME="montana"
+    PRIVATE_BUILD_DESC="montana-userdebug 8.1.0 OPM7.190201.001 0fc62393eb release-keys"
+
+# Get BUILD_FINGERPRINT value
+BUILD_FINGERPRINT := "motorola/montana/montana:8.1.0/OPM7.190201.001/0fc62393eb:userdebug/release-keys"
 
 # for specific
 $(call inherit-product, vendor/motorola/montana/Montana-vendor.mk)
