@@ -43,8 +43,6 @@ PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto G5s"
-    PRODUCT_NAME="montana"
-    TARGET_NAME="montana"
     PRIVATE_BUILD_DESC="montana-userdebug 8.1.0 OPM7.190201.001 0fc62393eb release-keys"
 
 # Get BUILD_FINGERPRINT value
