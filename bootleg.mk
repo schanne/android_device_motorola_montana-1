@@ -23,20 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/motorola/montana/device.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Google Apps
-TARGET_GAPPS_ARCH := arm64
-TARGET_MINIMAL_APPS := true
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := montana
-PRODUCT_NAME := aosp_montana
+PRODUCT_NAME := bootleg_montana
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_MODEL := Moto G5S
