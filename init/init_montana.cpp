@@ -88,8 +88,28 @@ void vendor_load_properties()
 
     if (platform != ANDROID_TARGET)
         return;
+
     // sku
     std::string sku = android::base::GetProperty("ro.boot.hardware.sku", "");
+    if (sku == "XT1790") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1790)");
+    } else if (sku == "XT1791") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1791)");
+    } else if (sku == "XT1792") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1792)");
+    } else if (sku == "XT1793") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1793)");
+    } else if (sku == "XT1794") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1794)");
+    } else if (sku == "XT1795") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1795)");
+    } else if (sku == "XT1796") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1796)");
+    } else if (sku == "XT1797") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1797)");
+    } else if (sku == "XT1799-2") {
+    property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1799-2)");
+    }
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
     std::string radio = android::base::GetProperty("ro.boot.radio", "");
@@ -102,31 +122,3 @@ void vendor_load_properties()
     num_sims();
 
 }
-// sku
-    if (sku == "XT1790") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1790)");
-    }
-    if (sku == "XT1791") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1791)");
-    }
-    if (sku == "XT1792") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1792)");
-    }
-    if (sku == "XT1793") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1793)");
-    }
-    if (sku == "XT1794") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1794)");
-    }
-    if (sku == "XT1795") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1795)");
-    }
-    if (sku == "XT1796") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1796)");
-    }
-    if (sku == "XT1797") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1797)");
-    }
-    if (sku == "XT1799-2") {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Moto G5S (XT1799-2)");
-    }
